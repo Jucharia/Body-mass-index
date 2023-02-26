@@ -1,11 +1,11 @@
 public class BmiService {
     public int calculate(double weight, double height) {
-        double x;
-        double y = 2;
-        double z = Math.pow(height, y); // возведение числа в квадрате(рост)
-        x = weight / z;
-        int result = (int) x;
-        return result;
+        double result;
+        double degree = 2;
+        double exponentiation = Math.pow(height, degree); // возведение числа в квадрате(рост)
+        result = weight / exponentiation;
+        int totalResult = (int) result;
+        return totalResult;
 
     }
 }
